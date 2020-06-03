@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <main>
+        <div class="profile">
+            <div class="profile_photo"><img src="image/face.png" alt=""></div>
+            <div class="profile_info">
+                <h3 class="profile_name">Вероника Ростова</h3>
+                <p class="profile_specialty">Менеджер по продажам</p>
+                <p class="profile_description">Подберу для вас самые лучшие предложения. <br> Мои услуги абсолютно
+                    бесплатны
+                </p>
+                <div class="profile_services">
+                    <p class="quantity">Услуг</p>
+                    <div class="services">
+                        <p class="service service-1"><span>Ручное бронирование</span><span>11</span></p>
+                        <p class="service service-2"><span>Пакетные туры</span><span>3</span></p>
+                        <p class="service service-3"><span>Отели</span><span></span>1</p>
+                    </div>
+                    <p class="total"><span>Всего</span><span>15</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comments_title">
+                <h3>Последние отзывы<a href="#">Все отзывы</a></h3>
+                <div><span class="like_quantity">131</span><span class="comment_quantity">14</span></div>
+            </div>
+            <ul class="comment_section" id="comment_section">
+                <li class="user_comment">
+                    <div class="info"><span class="user-name">Самуил </span><span class="time">13 октября 2011</span>
+                    </div>
+                    <p id="comment_text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!! </p>
+                </li>
+                <li class="user_comment">
+                    <div class="info"><span class="user-name">Лилия Семёновна </span><span class="time">14 октября
+                            2011</span></div>
+                    <p id="comment_text"> Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                        стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и
+                        торговли бриллиантами?</p>
+                </li>
+                <li class="user_comment">
+                    <div class="info"><span class="user-name">Лилия Семёновна </span><span class="time"> 14 октября
+                            2011</span></div>
+                    <p id="comment_text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                        стабилизирует кинетический момент?</p>
+                </li>
+            </ul>
+        </div>
+        <form>
+            <div class="form_inner">
+                <input type="text" id="comment-name" placeholder="Введите имя">
+                <textarea id="comment-body" cols="30" rows="10"></textarea>
+                <button id="comment-add">Написать консультанту</button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="js/mainie.js"><\/script>;')
+        } else {
+            document.write('<script src="js/main.js"><\/script>');
+        }   
+    </script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
