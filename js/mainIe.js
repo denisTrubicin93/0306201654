@@ -20,13 +20,11 @@ let comments = [
     }
 ];
 
-loadComments();
 
 
 
 document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.keyCode == 13) {
-        console.log('hello')
         event.preventDefault();
         document.getElementById("comment-add").click();
         return;
@@ -49,20 +47,11 @@ document.getElementById('comment-add').onclick = function () {
     commentBody.value = '';
     comments.unshift(comment);
 
-    saveComments();
     showComments();
 
 }
 
-function saveComments() {
-    localStorage.setItem('comments', JSON.stringify(comments));
-}
 
-function loadComments() {
-    console.log(localStorage.getItem('comments'));
-    if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
-    showComments();
-}
 
 function showComments() {
     let commentSection = document.getElementById('comment_section');
